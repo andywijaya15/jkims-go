@@ -16,4 +16,5 @@ func IntiDB() {
 		panic("failed to connect database")
 	}
 	db.AutoMigrate(&models.People{})
+	db.AutoMigrate(&models.Wedding{})
 }
